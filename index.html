@@ -13,6 +13,11 @@
 {%block byline %} Delfina Marchese {% endblock byline %}
 {% block pubdate %} September, 26 2025 {% endblock pubdate %}
 
+
+{% for obj in harvard_park_homicides %}
+{{ obj.first_name }} {{ obj.last_name }} <br>
+{% endfor %}
+
 <!-- <article>
   <header class="container">
     <h1 class="headline">{{ meta.headline }}</h1>
