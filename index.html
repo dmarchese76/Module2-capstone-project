@@ -9,7 +9,11 @@
 {% endblock scripts %}
 
 {% block content %}
-<article>
+{% block headline %} My Headline will go here {% endblock headline %}
+{%block byline %} Delfina Marchese {% endblock byline %}
+{% block pubdate %} September, 26 2025 {% endblock pubdate %}
+
+<!-- <article>
   <header class="container">
     <h1 class="headline">{{ meta.headline }}</h1>
     <img src="{% static 'assets/images/baker.jpg' %}" alt="Baker logo" width=250 />
@@ -44,5 +48,5 @@
         </tbody>
     </table>
   </div>
-</article>
+</article> -->
 {% endblock content %}
